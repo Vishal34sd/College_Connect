@@ -27,7 +27,7 @@ export const createTaskSchema = z.object({
     .default("Medium"),
   dueDate: z
     .string()
-    .datetime({ offset: true, message: "Invalid date format" })
+    .datetime({ message: "Invalid date format" })
     .nullable()
     .optional()
     .default(null),
